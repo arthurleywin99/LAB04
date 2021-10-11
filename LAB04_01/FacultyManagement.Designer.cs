@@ -56,9 +56,8 @@ namespace LAB04_01
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmStudent = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmFaculty = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmStudent = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFaculty)).BeginInit();
@@ -485,33 +484,25 @@ namespace LAB04_01
             // 
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmStudent,
-            this.tsmFaculty,
             this.tsmExit});
             this.toolsToolStripMenuItem.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(66, 23);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
-            // tsmStudent
-            // 
-            this.tsmStudent.Name = "tsmStudent";
-            this.tsmStudent.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
-            this.tsmStudent.Size = new System.Drawing.Size(213, 24);
-            this.tsmStudent.Text = "Student";
-            // 
-            // tsmFaculty
-            // 
-            this.tsmFaculty.Name = "tsmFaculty";
-            this.tsmFaculty.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F2)));
-            this.tsmFaculty.Size = new System.Drawing.Size(213, 24);
-            this.tsmFaculty.Text = "Faculty";
-            // 
             // tsmExit
             // 
             this.tsmExit.Name = "tsmExit";
             this.tsmExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.tsmExit.Size = new System.Drawing.Size(213, 24);
+            this.tsmExit.Size = new System.Drawing.Size(180, 24);
             this.tsmExit.Text = "Exit";
+            // 
+            // tsmStudent
+            // 
+            this.tsmStudent.Name = "tsmStudent";
+            this.tsmStudent.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.tsmStudent.Size = new System.Drawing.Size(180, 24);
+            this.tsmStudent.Text = "Student";
             // 
             // frmFacultyManagement
             // 
@@ -578,9 +569,8 @@ namespace LAB04_01
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tsmStudent;
-        private System.Windows.Forms.ToolStripMenuItem tsmFaculty;
         private System.Windows.Forms.ToolStripMenuItem tsmExit;
         private System.Windows.Forms.TextBox txtTotalProfessor;
+        private System.Windows.Forms.ToolStripMenuItem tsmStudent;
     }
 }

@@ -43,7 +43,7 @@ namespace LAB04_01.Controller
                 error = string.Empty;
                 try
                 {
-                    var student = context.Students.First(p => p.StudentID == ID);
+                    var student = context.Students.FirstOrDefault(p => p.StudentID == ID);
                     student.FullName = NewStudent.FullName;
                     student.AverageScore = NewStudent.AverageScore;
                     student.FacultyID = NewStudent.FacultyID;
@@ -65,7 +65,7 @@ namespace LAB04_01.Controller
                 error = string.Empty;
                 try
                 {
-                    var student = context.Students.First(p => p.StudentID == ID);
+                    var student = context.Students.FirstOrDefault(p => p.StudentID == ID);
                     context.Students.Remove(student);
                     context.SaveChanges();
                     return true;

@@ -21,15 +21,7 @@ namespace LAB04_01.Controller
         {
             using (var context = new SMContext())
             {
-                return context.Faculties.First(p => p.FacultyID == FacultyID).FacultyName;
-            }
-        }
-
-        public static int GetFacultyID(string FacultyName)
-        {
-            using (var context = new SMContext())
-            {
-                return context.Faculties.First(p => p.FacultyName == FacultyName).FacultyID;
+                return context.Faculties.FirstOrDefault(p => p.FacultyID == FacultyID).FacultyName;
             }
         }
 
@@ -59,7 +51,7 @@ namespace LAB04_01.Controller
                 error = string.Empty;
                 try
                 {
-                    var faculty = context.Faculties.First(p => p.FacultyID == FacultyID);
+                    var faculty = context.Faculties.FirstOrDefault(p => p.FacultyID == FacultyID);
                     faculty.FacultyName = NewFaculty.FacultyName;
                     faculty.TotalProfessor = NewFaculty.TotalProfessor;
                     context.SaveChanges();
@@ -80,7 +72,7 @@ namespace LAB04_01.Controller
                 error = string.Empty;
                 try
                 {
-                    var faculty = context.Faculties.First(p => p.FacultyID == FacultyID);
+                    var faculty = context.Faculties.FirstOrDefault(p => p.FacultyID == FacultyID);
                     context.Faculties.Remove(faculty);
                     context.SaveChanges();
                     return true;

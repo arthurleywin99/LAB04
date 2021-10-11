@@ -18,6 +18,14 @@ namespace LAB04_01
             CenterToParent();
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
 
+        private void frmSearchForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -65,6 +65,7 @@ namespace LAB04_01
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmFaculty = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmSearch = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmExit = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -72,7 +73,6 @@ namespace LAB04_01
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).BeginInit();
@@ -617,19 +617,25 @@ namespace LAB04_01
             this.tsmFaculty.ShortcutKeys = System.Windows.Forms.Keys.F2;
             this.tsmFaculty.Size = new System.Drawing.Size(213, 24);
             this.tsmFaculty.Text = "Quản lý Khoa";
+            this.tsmFaculty.Click += new System.EventHandler(this.tsmFaculty_Click);
             // 
             // tsmSearch
             // 
             this.tsmSearch.Name = "tsmSearch";
             this.tsmSearch.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.tsmSearch.Size = new System.Drawing.Size(258, 24);
+            this.tsmSearch.Size = new System.Drawing.Size(213, 24);
             this.tsmSearch.Text = "Tìm kiếm";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(210, 6);
             // 
             // tsmExit
             // 
             this.tsmExit.Name = "tsmExit";
             this.tsmExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.tsmExit.Size = new System.Drawing.Size(258, 24);
+            this.tsmExit.Size = new System.Drawing.Size(213, 24);
             this.tsmExit.Text = "Exit";
             // 
             // toolStrip1
@@ -690,11 +696,6 @@ namespace LAB04_01
             this.toolStripLabel2.Size = new System.Drawing.Size(81, 32);
             this.toolStripLabel2.Text = "Tìm kiếm";
             this.toolStripLabel2.Click += new System.EventHandler(this.tsmSearch_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(210, 6);
             // 
             // frmStudentManagement
             // 

@@ -57,10 +57,9 @@ namespace LAB04_01
         private void ComboBoxFacultyItemLoad()
         {
             List<Faculty> faculties = FacultyController.GetFacultyList();
-            foreach (var item in faculties)
-            {
-                cboFaculty.Items.Add(item.FacultyName);
-            }
+            cboFaculty.DataSource = faculties;
+            cboFaculty.DisplayMember = "FacultyName";
+            cboFaculty.ValueMember = "FacultyID";
             cboFaculty.SelectedIndex = 0;
         }
 
@@ -97,7 +96,7 @@ namespace LAB04_01
                 StudentID = txtStudentID.Text,
                 FullName = txtFullName.Text,
                 AverageScore = float.Parse(txtAverageScore.Text),
-                FacultyID = FacultyController.GetFacultyID(cboFaculty.Text)
+                FacultyID = Convert.ToInt32(cboFaculty.SelectedValue)
             };
         }
 
@@ -274,14 +273,16 @@ namespace LAB04_01
 
         private void tsmFaculty_Click(object sender, EventArgs e)
         {
-            Hide();
+            Visible = false;
             new frmFacultyManagement().ShowDialog();
-            Close();
+            Visible = true;
         }
 
         private void tsmSearch_Click(object sender, EventArgs e)
         {
+            Visible = false;
             new frmSearchForm().ShowDialog();
+            Visible = true;
         }
     }
 }
