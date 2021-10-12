@@ -281,7 +281,9 @@ namespace LAB04_01
         private void tsmSearch_Click(object sender, EventArgs e)
         {
             Visible = false;
-            new frmSearchForm().ShowDialog();
+            frmSearchForm Form = new frmSearchForm();
+            Form.sender(data);
+            Form.ShowDialog();
             Visible = true;
         }
     }
