@@ -25,6 +25,14 @@ namespace LAB04_01.Controller
             }
         }
 
+        public static int GetFacultyID(string FacultyName)
+        {
+            using (var context = new SMContext())
+            {
+                return context.Faculties.FirstOrDefault(p => p.FacultyName == FacultyName).FacultyID;
+            }
+        }
+
         public static bool AddFaculty(Faculty faculty, out string error)
         {
             using (var context = new SMContext())

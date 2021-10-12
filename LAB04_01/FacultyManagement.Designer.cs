@@ -56,8 +56,8 @@ namespace LAB04_01
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmExit = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmStudent = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmExit = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFaculty)).BeginInit();
@@ -490,19 +490,20 @@ namespace LAB04_01
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(66, 23);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
-            // tsmExit
-            // 
-            this.tsmExit.Name = "tsmExit";
-            this.tsmExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.tsmExit.Size = new System.Drawing.Size(180, 24);
-            this.tsmExit.Text = "Exit";
-            // 
             // tsmStudent
             // 
             this.tsmStudent.Name = "tsmStudent";
             this.tsmStudent.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.tsmStudent.Size = new System.Drawing.Size(180, 24);
             this.tsmStudent.Text = "Student";
+            this.tsmStudent.Click += new System.EventHandler(this.tsmStudent_Click);
+            // 
+            // tsmExit
+            // 
+            this.tsmExit.Name = "tsmExit";
+            this.tsmExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.tsmExit.Size = new System.Drawing.Size(180, 24);
+            this.tsmExit.Text = "Exit";
             // 
             // frmFacultyManagement
             // 

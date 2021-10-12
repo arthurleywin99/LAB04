@@ -273,9 +273,8 @@ namespace LAB04_01
 
         private void tsmFaculty_Click(object sender, EventArgs e)
         {
-            Visible = false;
             new frmFacultyManagement().ShowDialog();
-            Visible = true;
+            Close();
         }
 
         private void tsmSearch_Click(object sender, EventArgs e)

@@ -302,6 +302,7 @@ namespace LAB04_01
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSearch
             // 
@@ -403,6 +404,7 @@ namespace LAB04_01
             this.txtResult.Name = "txtResult";
             this.txtResult.Size = new System.Drawing.Size(93, 26);
             this.txtResult.TabIndex = 1;
+            this.txtResult.Text = "0";
             // 
             // frmSearchForm
             // 

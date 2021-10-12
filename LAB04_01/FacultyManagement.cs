@@ -207,5 +207,11 @@ namespace LAB04_01
             txtFacultyName.Text = "";
             txtTotalProfessor.Text = "";
         }
+
+        private void tsmStudent_Click(object sender, EventArgs e)
+        {
+            new frmStudentManagement().ShowDialog();
+            Close();
+        }
     }
 }
