@@ -213,5 +213,10 @@ namespace LAB04_01
             new frmStudentManagement().ShowDialog();
             Close();
         }
+
+        private void tsmExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

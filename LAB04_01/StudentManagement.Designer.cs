@@ -637,6 +637,7 @@ namespace LAB04_01
             this.tsmExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.tsmExit.Size = new System.Drawing.Size(213, 24);
             this.tsmExit.Text = "Exit";
+            this.tsmExit.Click += new System.EventHandler(this.tsmExit_Click);
             // 
             // toolStrip1
             // 

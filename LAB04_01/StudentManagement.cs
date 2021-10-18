@@ -285,5 +285,10 @@ namespace LAB04_01
             Form.ShowDialog();
             Visible = true;
         }
+
+        private void tsmExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
